@@ -1,0 +1,14 @@
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+  - stage: Build
+    jobs:
+      - job: BuildJob
+        steps:
+          - bash: echo "Doing build job"
+          
